@@ -62,9 +62,9 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Kelvin",
-            "Fahrenheit",
-            "Celsius"});
+           MeasureUnits.Kelvin,
+            MeasureUnits.Fahrenheit,
+            MeasureUnits.Celsius});
             this.comboBox1.Location = new System.Drawing.Point(250, 12);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(126, 21);
