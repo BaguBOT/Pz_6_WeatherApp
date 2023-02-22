@@ -25,10 +25,12 @@ namespace WeatherApp
 
         }
 
-        private void comboBox1_SelectionChangeCommitted(object sender, System.EventArgs e)
-        {
-            //List<Weather> _MeasureUnits = _weather.Weathers.Where(x => x.MeasureUnit == comboBox1.Items.text).ToList();
-            //WeatherDataGrid.DataSource = _MeasureUnits;
+        private void comboBox1_SelectionChangeCommitted(object sender, System.EventArgs e) {
+            
+            string a = comboBox1.Text;
+                List<Weather> _MeasureUnits = _weather.Weathers.Where(x => x.MeasureUnit.ToString() ==a ).ToList(); ;
+                WeatherDataGrid.DataSource = _MeasureUnits;
+
         }
 
         private void button1_Click(object sender, System.EventArgs e)
@@ -44,8 +46,8 @@ namespace WeatherApp
 
         private void button3_Click(object sender, System.EventArgs e)
         {
-           // WeatherDataGrid.Sort();
-           
+            List<Weather> _Temp = _weather.Weathers.OrderBy(x => x.Temperature).ToList();
+            WeatherDataGrid.DataSource = _Temp;
         }
     }
     
