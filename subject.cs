@@ -1,17 +1,16 @@
-﻿namespace WeatherApp
+﻿namespace studentApp
 {
-    internal class City
-    {
+    internal class subject {
         private string _name;
 
-        public string Name
-        {
+    
+        public string Name {
             get => _name;
             private set => _name = value;
         }
 
-        public City(string name)
-        {
+        public subject( string name) {
+
             _name = name;
         }
     }

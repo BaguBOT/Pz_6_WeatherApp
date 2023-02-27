@@ -4,8 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WeatherApp
-{
+namespace studentApp {
     internal static class Program
     {
         /// <summary>
@@ -16,7 +15,7 @@ namespace WeatherApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new WeatherForm());
+            Application.Run(new studentForm());
         }
     }
 }
