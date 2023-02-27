@@ -41,7 +41,7 @@
             get { return Subject != null ? Subject.Name : "Не назначено"; }
         }
 
-        public object StudentNAME { get; internal set; }
+        
 
         public Atest(int Semester, Student Fuo, subject subjet, atessst Atesst,int garde)
         {
