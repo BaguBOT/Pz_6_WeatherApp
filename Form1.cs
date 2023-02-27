@@ -37,6 +37,7 @@ namespace studentApp {
          Studentdate.DataSource = _student.Atest.ToList();
             textBox1.Text = "";
             comboBox1.Text = "";
+            //ААА
         }
 
         private void button2_Click(object sender, System.EventArgs e)
